@@ -1,9 +1,11 @@
 import React, { Suspense } from "react";
 import Tiger from "./models/Tiger";
 import Loading from "./components/Loading";
-import { FaBook, FaGithub } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
+import { MdAttachFile } from "react-icons/md";
+import { IoMdBook } from "react-icons/io";
 import IconButton from "./components/IconButton";
 import Button from "./components/Button";
 
@@ -48,11 +50,16 @@ const App = () => {
               Computer Vision
             </span> and{" "}
             <span className="font-bold text-ctp-red">Computer Graphics</span>.
-            <div className="text-xl mt-5 mb-2">
+            <div className="flex flex-col md:flex-row items-center justify-center text-xl mt-5 mb-2">
+              <Button
+                link={"https://amogh-w.github.io/resume.pdf"}
+                text={"Resume"}
+                icon={<MdAttachFile />}
+              />
               <Button
                 link={"https://amogh-w.vercel.app/"}
-                text={"View Blog"}
-                icon={<FaBook />}
+                text={"Blog"}
+                icon={<IoMdBook />}
               />
             </div>
           </div>
