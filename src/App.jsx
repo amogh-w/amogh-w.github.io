@@ -20,6 +20,10 @@ const App = () => {
           />
           <div className="w-2/3 md:w-full flex justify-evenly text-4xl pt-5 pb-5">
             <IconButton
+              link={"https://www.linkedin.com/in/amogh-w/"}
+              text={<FaLinkedin />}
+            />
+            <IconButton
               link={"https://github.com/amogh-w"}
               text={<FaGithub />}
             />
@@ -29,27 +33,14 @@ const App = () => {
               }
               text={<SiGooglescholar />}
             />
-            <IconButton
-              link={"https://www.linkedin.com/in/amogh-w/"}
-              text={<FaLinkedin />}
-            />
           </div>
         </div>
         <div className="md:w-full flex flex-col  items-center justify-center p-2">
           <div className="text-pretty text-lg md:text-xl lg:text-2xl text-center">
-            Hello, I'm Amogh Warkhandkar.
-            <br />
-            Studying M.Sc. Data Science at{" "}
-            <span className="font-bold text-ctp-blue">
-              RWTH Aachen University
-            </span>
-            .
-            <br />
-            Interested in{" "}
-            <span className="font-bold text-ctp-red">
-              Computer Vision
-            </span> and{" "}
-            <span className="font-bold text-ctp-red">Computer Graphics</span>.
+          Hello, I’m Amogh Warkhandkar<br />
+          M.Sc. Data Science student at <span className="font-bold text-ctp-blue">RWTH Aachen University</span><br />
+          Interested in <span className="font-bold text-ctp-red">Computer Vision</span> and <span className="font-bold text-ctp-red">Computer Graphics</span><br />
+          Passionate about Mathematics, Programming, Algorithms, and Artificial Intelligence
             <div className="flex flex-col md:flex-row items-center justify-center text-xl mt-5 mb-2">
               <Button
                 link={"https://amogh-w.github.io/resume.pdf"}
